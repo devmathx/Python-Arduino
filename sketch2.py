@@ -11,8 +11,8 @@ def ehPwm():
     porta = str(input("Qual porta? "))
     pin = (str(portas[porta]).split())[2]
     if int(pin) in [3, 5, 6, 9, 10, 11]:
-        return print(f"Sim, a porta {pin} é PWM.")
-    else: return print(f"Não, a porta {pin} não é PWM.")
+        print(f"Sim, a porta {pin} é PWM.")
+    else: print(f"Não, a porta {pin} não é PWM.")
 
 portas = {
     'R': placa.get_pin('d:8:o'),
