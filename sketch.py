@@ -1,4 +1,3 @@
-# Versão 0.029
 from pyfirmata import Arduino
 
 placa = Arduino("COM3")
@@ -13,5 +12,5 @@ while True:
         pin = int(input('Selecione a porta: [9,10] '))
         porta = placa.get_pin(f"d:{pin}:p")
     else: porta.write(float(value) / 100)
-        
+    
 placa.exit()
